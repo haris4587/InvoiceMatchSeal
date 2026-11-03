@@ -1,0 +1,1699 @@
+{
+  "network": "studionet",
+  "rpc": "https://studio.genlayer.com/api",
+  "chain_id": 61999,
+  "source_sha256": "e4bb8da252624f82ddee33edfb532e8e00b2ded20dd801383fb0115fef9900ce",
+  "leader_only": false,
+  "mocked_ai": false,
+  "case": "substitution",
+  "wallets": {
+    "buyer": "0x393019A578d0855cEFe1335dFA4b17452785e0CD",
+    "supplier": "0x2C774f1367684eF508E53247470b6D730dF44cab"
+  },
+  "transactions": [
+    {
+      "method": "deploy",
+      "sender": "0x393019A578d0855cEFe1335dFA4b17452785e0CD",
+      "tx_hash": "0x23b10c6d006aa26db3a76cd9470a1aa595cf3d0ad6620b931ba93947e1c84178",
+      "transaction": {
+        "hash": "0x23b10c6d006aa26db3a76cd9470a1aa595cf3d0ad6620b931ba93947e1c84178",
+        "status": 7,
+        "status_name": "FINALIZED",
+        "from_address": "0x393019A578d0855cEFe1335dFA4b17452785e0CD",
+        "to_address": "0xed891334A5066375Aa2d3ee3bBA9D5F98F8F9D40",
+        "leader_only": false,
+        "execution_mode": "NORMAL",
+        "num_of_initial_validators": 5,
+        "result_name": "MAJORITY_AGREE",
+        "consensus_data": {
+          "votes": {
+            "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+            "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+            "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+            "0xCe0B66448435cA53665C954705Abd753515594Cf": "idle",
+            "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+          },
+          "leader_receipt": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution_result": "SUCCESS",
+              "result": {
+                "raw": "AAA=",
+                "status": "return",
+                "payload": {
+                  "raw": [
+                    0
+                  ],
+                  "readable": "null"
+                }
+              },
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "e88b22370cb751adad3125efb732227090023a123745d98c1debfe544cfca29f",
+              "eq_outputs": {},
+              "validator_address": "0x045291B293B9D68969c18B6637A8258038cf787A"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": {
+                "raw": "AAA=",
+                "status": "return",
+                "payload": {
+                  "raw": [
+                    0
+                  ],
+                  "readable": "null"
+                }
+              },
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "e88b22370cb751adad3125efb732227090023a123745d98c1debfe544cfca29f",
+              "validator_address": "0x045291B293B9D68969c18B6637A8258038cf787A"
+            }
+          ],
+          "validators": [
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": "AAA=",
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "e88b22370cb751adad3125efb732227090023a123745d98c1debfe544cfca29f",
+              "validator_address": "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc"
+            },
+            {
+              "mode": "validator",
+              "vote": "idle",
+              "execution_result": "ERROR",
+              "result": "AmlkbGU=",
+              "genvm_result": {
+                "stderr": "Validator execution cancelled after quorum",
+                "stdout": "",
+                "raw_error": {
+                  "fatal": false,
+                  "causes": [
+                    "VALIDATOR_QUORUM_REACHED"
+                  ]
+                },
+                "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": null,
+              "validator_address": "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B"
+            },
+            {
+              "mode": "validator",
+              "vote": "idle",
+              "execution_result": "ERROR",
+              "result": "AmlkbGU=",
+              "genvm_result": {
+                "stderr": "Validator execution cancelled after quorum",
+                "stdout": "",
+                "raw_error": {
+                  "fatal": false,
+                  "causes": [
+                    "VALIDATOR_QUORUM_REACHED"
+                  ]
+                },
+                "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": null,
+              "validator_address": "0xCe0B66448435cA53665C954705Abd753515594Cf"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": "AAA=",
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "e88b22370cb751adad3125efb732227090023a123745d98c1debfe544cfca29f",
+              "validator_address": "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "lock_order",
+      "sender": "0x393019A578d0855cEFe1335dFA4b17452785e0CD",
+      "tx_hash": "0xd06e6a0810aaa38b2fab5fec55c106e8342f885d0e304d8e7b98eea49626f3bf",
+      "transaction": {
+        "hash": "0xd06e6a0810aaa38b2fab5fec55c106e8342f885d0e304d8e7b98eea49626f3bf",
+        "status": 7,
+        "status_name": "FINALIZED",
+        "from_address": "0x393019A578d0855cEFe1335dFA4b17452785e0CD",
+        "to_address": "0xed891334A5066375Aa2d3ee3bBA9D5F98F8F9D40",
+        "leader_only": false,
+        "execution_mode": "NORMAL",
+        "num_of_initial_validators": 5,
+        "result_name": "MAJORITY_AGREE",
+        "consensus_data": {
+          "votes": {
+            "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+            "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+            "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+            "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "idle",
+            "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle"
+          },
+          "leader_receipt": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution_result": "SUCCESS",
+              "result": {
+                "raw": "AAA=",
+                "status": "return",
+                "payload": {
+                  "raw": [
+                    0
+                  ],
+                  "readable": "null"
+                }
+              },
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "d47b55f2196649f40c7d6c865cb695a09fbcb776724aaae118d6849c80d2c245",
+              "eq_outputs": {},
+              "validator_address": "0x045291B293B9D68969c18B6637A8258038cf787A"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": {
+                "raw": "AAA=",
+                "status": "return",
+                "payload": {
+                  "raw": [
+                    0
+                  ],
+                  "readable": "null"
+                }
+              },
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "d47b55f2196649f40c7d6c865cb695a09fbcb776724aaae118d6849c80d2c245",
+              "validator_address": "0x045291B293B9D68969c18B6637A8258038cf787A"
+            }
+          ],
+          "validators": [
+            {
+              "mode": "validator",
+              "vote": "idle",
+              "execution_result": "ERROR",
+              "result": "AmlkbGU=",
+              "genvm_result": {
+                "stderr": "Validator execution cancelled after quorum",
+                "stdout": "",
+                "raw_error": {
+                  "fatal": false,
+                  "causes": [
+                    "VALIDATOR_QUORUM_REACHED"
+                  ]
+                },
+                "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": null,
+              "validator_address": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": "AAA=",
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "d47b55f2196649f40c7d6c865cb695a09fbcb776724aaae118d6849c80d2c245",
+              "validator_address": "0x336458747913FE397be82c4F0926ACeB3ab13618"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": "AAA=",
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "d47b55f2196649f40c7d6c865cb695a09fbcb776724aaae118d6849c80d2c245",
+              "validator_address": "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE"
+            },
+            {
+              "mode": "validator",
+              "vote": "idle",
+              "execution_result": "ERROR",
+              "result": "AmlkbGU=",
+              "genvm_result": {
+                "stderr": "Validator execution cancelled after quorum",
+                "stdout": "",
+                "raw_error": {
+                  "fatal": false,
+                  "causes": [
+                    "VALIDATOR_QUORUM_REACHED"
+                  ]
+                },
+                "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": null,
+              "validator_address": "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "accept_order",
+      "sender": "0x2C774f1367684eF508E53247470b6D730dF44cab",
+      "tx_hash": "0xccc84c5bab5c76c44674185e655022f5325ef293a7f2425d24a38d45b96cf2e6",
+      "transaction": {
+        "hash": "0xccc84c5bab5c76c44674185e655022f5325ef293a7f2425d24a38d45b96cf2e6",
+        "status": 7,
+        "status_name": "FINALIZED",
+        "from_address": "0x2C774f1367684eF508E53247470b6D730dF44cab",
+        "to_address": "0xed891334A5066375Aa2d3ee3bBA9D5F98F8F9D40",
+        "leader_only": false,
+        "execution_mode": "NORMAL",
+        "num_of_initial_validators": 5,
+        "result_name": "MAJORITY_AGREE",
+        "consensus_data": {
+          "votes": {
+            "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+            "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+            "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+            "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+            "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "idle"
+          },
+          "leader_receipt": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution_result": "SUCCESS",
+              "result": {
+                "raw": "AAA=",
+                "status": "return",
+                "payload": {
+                  "raw": [
+                    0
+                  ],
+                  "readable": "null"
+                }
+              },
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "8501e8840a59ce44e3913171dd578bfc4c86bc24d420dba5a79155e0ad7bb170",
+              "eq_outputs": {},
+              "validator_address": "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": {
+                "raw": "AAA=",
+                "status": "return",
+                "payload": {
+                  "raw": [
+                    0
+                  ],
+                  "readable": "null"
+                }
+              },
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "8501e8840a59ce44e3913171dd578bfc4c86bc24d420dba5a79155e0ad7bb170",
+              "validator_address": "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8"
+            }
+          ],
+          "validators": [
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": "AAA=",
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "8501e8840a59ce44e3913171dd578bfc4c86bc24d420dba5a79155e0ad7bb170",
+              "validator_address": "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907"
+            },
+            {
+              "mode": "validator",
+              "vote": "idle",
+              "execution_result": "ERROR",
+              "result": "AmlkbGU=",
+              "genvm_result": {
+                "stderr": "Validator execution cancelled after quorum",
+                "stdout": "",
+                "raw_error": {
+                  "fatal": false,
+                  "causes": [
+                    "VALIDATOR_QUORUM_REACHED"
+                  ]
+                },
+                "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": null,
+              "validator_address": "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc"
+            },
+            {
+              "mode": "validator",
+              "vote": "idle",
+              "execution_result": "ERROR",
+              "result": "AmlkbGU=",
+              "genvm_result": {
+                "stderr": "Validator execution cancelled after quorum",
+                "stdout": "",
+                "raw_error": {
+                  "fatal": false,
+                  "causes": [
+                    "VALIDATOR_QUORUM_REACHED"
+                  ]
+                },
+                "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": null,
+              "validator_address": "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": "AAA=",
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "8501e8840a59ce44e3913171dd578bfc4c86bc24d420dba5a79155e0ad7bb170",
+              "validator_address": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "lock_delivery",
+      "sender": "0x393019A578d0855cEFe1335dFA4b17452785e0CD",
+      "tx_hash": "0xf88e211838a83552e6a38027887c81218effc18f5bbd1048c8d24737ff73550c",
+      "transaction": {
+        "hash": "0xf88e211838a83552e6a38027887c81218effc18f5bbd1048c8d24737ff73550c",
+        "status": 7,
+        "status_name": "FINALIZED",
+        "from_address": "0x393019A578d0855cEFe1335dFA4b17452785e0CD",
+        "to_address": "0xed891334A5066375Aa2d3ee3bBA9D5F98F8F9D40",
+        "leader_only": false,
+        "execution_mode": "NORMAL",
+        "num_of_initial_validators": 5,
+        "result_name": "MAJORITY_AGREE",
+        "consensus_data": {
+          "votes": {
+            "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+            "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+            "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+            "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+            "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "idle"
+          },
+          "leader_receipt": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution_result": "SUCCESS",
+              "result": {
+                "raw": "AAA=",
+                "status": "return",
+                "payload": {
+                  "raw": [
+                    0
+                  ],
+                  "readable": "null"
+                }
+              },
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "2e0bbf99d5109ab24e4ec5b15e704e6169a051d65352de2072cb8f5b8d799c96",
+              "eq_outputs": {},
+              "validator_address": "0x336458747913FE397be82c4F0926ACeB3ab13618"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": {
+                "raw": "AAA=",
+                "status": "return",
+                "payload": {
+                  "raw": [
+                    0
+                  ],
+                  "readable": "null"
+                }
+              },
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "2e0bbf99d5109ab24e4ec5b15e704e6169a051d65352de2072cb8f5b8d799c96",
+              "validator_address": "0x336458747913FE397be82c4F0926ACeB3ab13618"
+            }
+          ],
+          "validators": [
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": "AAA=",
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "2e0bbf99d5109ab24e4ec5b15e704e6169a051d65352de2072cb8f5b8d799c96",
+              "validator_address": "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB"
+            },
+            {
+              "mode": "validator",
+              "vote": "idle",
+              "execution_result": "ERROR",
+              "result": "AmlkbGU=",
+              "genvm_result": {
+                "stderr": "Validator execution cancelled after quorum",
+                "stdout": "",
+                "raw_error": {
+                  "fatal": false,
+                  "causes": [
+                    "VALIDATOR_QUORUM_REACHED"
+                  ]
+                },
+                "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": null,
+              "validator_address": "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": "AAA=",
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "2e0bbf99d5109ab24e4ec5b15e704e6169a051d65352de2072cb8f5b8d799c96",
+              "validator_address": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a"
+            },
+            {
+              "mode": "validator",
+              "vote": "idle",
+              "execution_result": "ERROR",
+              "result": "AmlkbGU=",
+              "genvm_result": {
+                "stderr": "Validator execution cancelled after quorum",
+                "stdout": "",
+                "raw_error": {
+                  "fatal": false,
+                  "causes": [
+                    "VALIDATOR_QUORUM_REACHED"
+                  ]
+                },
+                "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": null,
+              "validator_address": "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "submit_invoice",
+      "sender": "0x2C774f1367684eF508E53247470b6D730dF44cab",
+      "tx_hash": "0x4ed3f9805a1bf36dcde0d65c6c3d7d7fbe3db501e2dea13d4faeb58f0c9f86df",
+      "transaction": {
+        "hash": "0x4ed3f9805a1bf36dcde0d65c6c3d7d7fbe3db501e2dea13d4faeb58f0c9f86df",
+        "status": 7,
+        "status_name": "FINALIZED",
+        "from_address": "0x2C774f1367684eF508E53247470b6D730dF44cab",
+        "to_address": "0xed891334A5066375Aa2d3ee3bBA9D5F98F8F9D40",
+        "leader_only": false,
+        "execution_mode": "NORMAL",
+        "num_of_initial_validators": 5,
+        "result_name": "MAJORITY_AGREE",
+        "consensus_data": {
+          "votes": {
+            "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+            "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "idle",
+            "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "idle",
+            "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree",
+            "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+          },
+          "leader_receipt": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution_result": "SUCCESS",
+              "result": {
+                "raw": "AAA=",
+                "status": "return",
+                "payload": {
+                  "raw": [
+                    0
+                  ],
+                  "readable": "null"
+                }
+              },
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "cbf8a01d9aad7e42595e0188bfe0d7c1c7fb3574efc8ec95dd81f7f4c27cd8a2",
+              "eq_outputs": {},
+              "validator_address": "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": {
+                "raw": "AAA=",
+                "status": "return",
+                "payload": {
+                  "raw": [
+                    0
+                  ],
+                  "readable": "null"
+                }
+              },
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "cbf8a01d9aad7e42595e0188bfe0d7c1c7fb3574efc8ec95dd81f7f4c27cd8a2",
+              "validator_address": "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947"
+            }
+          ],
+          "validators": [
+            {
+              "mode": "validator",
+              "vote": "idle",
+              "execution_result": "ERROR",
+              "result": "AmlkbGU=",
+              "genvm_result": {
+                "stderr": "Validator execution cancelled after quorum",
+                "stdout": "",
+                "raw_error": {
+                  "fatal": false,
+                  "causes": [
+                    "VALIDATOR_QUORUM_REACHED"
+                  ]
+                },
+                "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": null,
+              "validator_address": "0xB4EE99165ffe987E64B7b72e45a753309c501eef"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": "AAA=",
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "cbf8a01d9aad7e42595e0188bfe0d7c1c7fb3574efc8ec95dd81f7f4c27cd8a2",
+              "validator_address": "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": "AAA=",
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "cbf8a01d9aad7e42595e0188bfe0d7c1c7fb3574efc8ec95dd81f7f4c27cd8a2",
+              "validator_address": "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907"
+            },
+            {
+              "mode": "validator",
+              "vote": "idle",
+              "execution_result": "ERROR",
+              "result": "AmlkbGU=",
+              "genvm_result": {
+                "stderr": "Validator execution cancelled after quorum",
+                "stdout": "",
+                "raw_error": {
+                  "fatal": false,
+                  "causes": [
+                    "VALIDATOR_QUORUM_REACHED"
+                  ]
+                },
+                "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": null,
+              "validator_address": "0x63d72fE364368491E62a42B9C73c317Ce1ca8434"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "evaluate",
+      "sender": "0x393019A578d0855cEFe1335dFA4b17452785e0CD",
+      "tx_hash": "0x01d48b5a9765310c2eda2d5ec00b610f755262a3f91efa6e3d73ab251fcb8810",
+      "transaction": {
+        "hash": "0x01d48b5a9765310c2eda2d5ec00b610f755262a3f91efa6e3d73ab251fcb8810",
+        "status": 7,
+        "status_name": "FINALIZED",
+        "from_address": "0x393019A578d0855cEFe1335dFA4b17452785e0CD",
+        "to_address": "0xed891334A5066375Aa2d3ee3bBA9D5F98F8F9D40",
+        "leader_only": false,
+        "execution_mode": "NORMAL",
+        "num_of_initial_validators": 5,
+        "result_name": "MAJORITY_AGREE",
+        "consensus_data": {
+          "votes": {
+            "0x007d6451555Df7765c707284F844137927aE4e5E": "idle",
+            "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+            "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
+            "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+            "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree"
+          },
+          "leader_receipt": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution_result": "SUCCESS",
+              "result": {
+                "raw": "AAA=",
+                "status": "return",
+                "payload": {
+                  "raw": [
+                    0
+                  ],
+                  "readable": "null"
+                }
+              },
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "fb36d74511d505963315bcdccbfb5887932c8b4e7d838a2160160d6529296862",
+              "eq_outputs": {
+                "0": {
+                  "raw": "ABYGcmVwb3J0DgZjaGVja3MNNg5kZWxpdmVyeV9xdW90ZYwCMTAwIHBlcmNlbnQgcG9seWVzdGVyIGJhdGggdG93ZWxzB2ZpbmRpbmdMRElGRkVSRU5UAmlkLFRPV0VMDWludm9pY2VfcXVvdGWsAldoaXRlIGJhdGggdG93ZWxzLCAxMDAgcGVyY2VudCBjb3R0b24Lb3JkZXJfcXVvdGWcAldoaXRlIDEwMCBwZXJjZW50IGNvdHRvbiBiYXRoIHRvd2VsBnJlYXNvbpQTVGhlIG9yZGVyIGFuZCBsb2NrZWQgdGVybXMgc3BlY2lmeSAxMDAgcGVyY2VudCBjb3R0b24gdG93ZWxzIHdpdGggbm8gcG9seWVzdGVyIHN1YnN0aXR1dGlvbnMuIFRoZSBkZWxpdmVyeSBleHBsaWNpdGx5IHN0YXRlcyBwb2x5ZXN0ZXIgdG93ZWxzIHdlcmUgcmVjZWl2ZWQgYW5kIHRoYXQgY290dG9uIHRvd2VscyB3ZXJlIG5vdCBkZWxpdmVyZWQsIGEgZGlyZWN0IG1hdGVyaWFsIHN1YnN0aXR1dGlvbiBjb250cmFkaWN0aW5nIGJvdGggdGhlIG9yZGVyZWQgc3BlY2lmaWNhdGlvbiBhbmQgdGhlIGludm9pY2UncyBjb3R0b24gY2xhaW0uBnN0YXR1cxRPSw==",
+                  "status": "return",
+                  "payload": {
+                    "raw": [
+                      22,
+                      6,
+                      114,
+                      101,
+                      112,
+                      111,
+                      114,
+                      116,
+                      14,
+                      6,
+                      99,
+                      104,
+                      101,
+                      99,
+                      107,
+                      115,
+                      13,
+                      54,
+                      14,
+                      100,
+                      101,
+                      108,
+                      105,
+                      118,
+                      101,
+                      114,
+                      121,
+                      95,
+                      113,
+                      117,
+                      111,
+                      116,
+                      101,
+                      140,
+                      2,
+                      49,
+                      48,
+                      48,
+                      32,
+                      112,
+                      101,
+                      114,
+                      99,
+                      101,
+                      110,
+                      116,
+                      32,
+                      112,
+                      111,
+                      108,
+                      121,
+                      101,
+                      115,
+                      116,
+                      101,
+                      114,
+                      32,
+                      98,
+                      97,
+                      116,
+                      104,
+                      32,
+                      116,
+                      111,
+                      119,
+                      101,
+                      108,
+                      115,
+                      7,
+                      102,
+                      105,
+                      110,
+                      100,
+                      105,
+                      110,
+                      103,
+                      76,
+                      68,
+                      73,
+                      70,
+                      70,
+                      69,
+                      82,
+                      69,
+                      78,
+                      84,
+                      2,
+                      105,
+                      100,
+                      44,
+                      84,
+                      79,
+                      87,
+                      69,
+                      76,
+                      13,
+                      105,
+                      110,
+                      118,
+                      111,
+                      105,
+                      99,
+                      101,
+                      95,
+                      113,
+                      117,
+                      111,
+                      116,
+                      101,
+                      172,
+                      2,
+                      87,
+                      104,
+                      105,
+                      116,
+                      101,
+                      32,
+                      98,
+                      97,
+                      116,
+                      104,
+                      32,
+                      116,
+                      111,
+                      119,
+                      101,
+                      108,
+                      115,
+                      44,
+                      32,
+                      49,
+                      48,
+                      48,
+                      32,
+                      112,
+                      101,
+                      114,
+                      99,
+                      101,
+                      110,
+                      116,
+                      32,
+                      99,
+                      111,
+                      116,
+                      116,
+                      111,
+                      110,
+                      11,
+                      111,
+                      114,
+                      100,
+                      101,
+                      114,
+                      95,
+                      113,
+                      117,
+                      111,
+                      116,
+                      101,
+                      156,
+                      2,
+                      87,
+                      104,
+                      105,
+                      116,
+                      101,
+                      32,
+                      49,
+                      48,
+                      48,
+                      32,
+                      112,
+                      101,
+                      114,
+                      99,
+                      101,
+                      110,
+                      116,
+                      32,
+                      99,
+                      111,
+                      116,
+                      116,
+                      111,
+                      110,
+                      32,
+                      98,
+                      97,
+                      116,
+                      104,
+                      32,
+                      116,
+                      111,
+                      119,
+                      101,
+                      108,
+                      6,
+                      114,
+                      101,
+                      97,
+                      115,
+                      111,
+                      110,
+                      148,
+                      19,
+                      84,
+                      104,
+                      101,
+                      32,
+                      111,
+                      114,
+                      100,
+                      101,
+                      114,
+                      32,
+                      97,
+                      110,
+                      100,
+                      32,
+                      108,
+                      111,
+                      99,
+                      107,
+                      101,
+                      100,
+                      32,
+                      116,
+                      101,
+                      114,
+                      109,
+                      115,
+                      32,
+                      115,
+                      112,
+                      101,
+                      99,
+                      105,
+                      102,
+                      121,
+                      32,
+                      49,
+                      48,
+                      48,
+                      32,
+                      112,
+                      101,
+                      114,
+                      99,
+                      101,
+                      110,
+                      116,
+                      32,
+                      99,
+                      111,
+                      116,
+                      116,
+                      111,
+                      110,
+                      32,
+                      116,
+                      111,
+                      119,
+                      101,
+                      108,
+                      115,
+                      32,
+                      119,
+                      105,
+                      116,
+                      104,
+                      32,
+                      110,
+                      111,
+                      32,
+                      112,
+                      111,
+                      108,
+                      121,
+                      101,
+                      115,
+                      116,
+                      101,
+                      114,
+                      32,
+                      115,
+                      117,
+                      98,
+                      115,
+                      116,
+                      105,
+                      116,
+                      117,
+                      116,
+                      105,
+                      111,
+                      110,
+                      115,
+                      46,
+                      32,
+                      84,
+                      104,
+                      101,
+                      32,
+                      100,
+                      101,
+                      108,
+                      105,
+                      118,
+                      101,
+                      114,
+                      121,
+                      32,
+                      101,
+                      120,
+                      112,
+                      108,
+                      105,
+                      99,
+                      105,
+                      116,
+                      108,
+                      121,
+                      32,
+                      115,
+                      116,
+                      97,
+                      116,
+                      101,
+                      115,
+                      32,
+                      112,
+                      111,
+                      108,
+                      121,
+                      101,
+                      115,
+                      116,
+                      101,
+                      114,
+                      32,
+                      116,
+                      111,
+                      119,
+                      101,
+                      108,
+                      115,
+                      32,
+                      119,
+                      101,
+                      114,
+                      101,
+                      32,
+                      114,
+                      101,
+                      99,
+                      101,
+                      105,
+                      118,
+                      101,
+                      100,
+                      32,
+                      97,
+                      110,
+                      100,
+                      32,
+                      116,
+                      104,
+                      97,
+                      116,
+                      32,
+                      99,
+                      111,
+                      116,
+                      116,
+                      111,
+                      110,
+                      32,
+                      116,
+                      111,
+                      119,
+                      101,
+                      108,
+                      115,
+                      32,
+                      119,
+                      101,
+                      114,
+                      101,
+                      32,
+                      110,
+                      111,
+                      116,
+                      32,
+                      100,
+                      101,
+                      108,
+                      105,
+                      118,
+                      101,
+                      114,
+                      101,
+                      100,
+                      44,
+                      32,
+                      97,
+                      32,
+                      100,
+                      105,
+                      114,
+                      101,
+                      99,
+                      116,
+                      32,
+                      109,
+                      97,
+                      116,
+                      101,
+                      114,
+                      105,
+                      97,
+                      108,
+                      32,
+                      115,
+                      117,
+                      98,
+                      115,
+                      116,
+                      105,
+                      116,
+                      117,
+                      116,
+                      105,
+                      111,
+                      110,
+                      32,
+                      99,
+                      111,
+                      110,
+                      116,
+                      114,
+                      97,
+                      100,
+                      105,
+                      99,
+                      116,
+                      105,
+                      110,
+                      103,
+                      32,
+                      98,
+                      111,
+                      116,
+                      104,
+                      32,
+                      116,
+                      104,
+                      101,
+                      32,
+                      111,
+                      114,
+                      100,
+                      101,
+                      114,
+                      101,
+                      100,
+                      32,
+                      115,
+                      112,
+                      101,
+                      99,
+                      105,
+                      102,
+                      105,
+                      99,
+                      97,
+                      116,
+                      105,
+                      111,
+                      110,
+                      32,
+                      97,
+                      110,
+                      100,
+                      32,
+                      116,
+                      104,
+                      101,
+                      32,
+                      105,
+                      110,
+                      118,
+                      111,
+                      105,
+                      99,
+                      101,
+                      39,
+                      115,
+                      32,
+                      99,
+                      111,
+                      116,
+                      116,
+                      111,
+                      110,
+                      32,
+                      99,
+                      108,
+                      97,
+                      105,
+                      109,
+                      46,
+                      6,
+                      115,
+                      116,
+                      97,
+                      116,
+                      117,
+                      115,
+                      20,
+                      79,
+                      75
+                    ],
+                    "readable": "{\"report\":{\"checks\":[{\"delivery_quote\":\"100 percent polyester bath towels\",\"finding\":\"DIFFERENT\",\"id\":\"TOWEL\",\"invoice_quote\":\"White bath towels, 100 percent cotton\",\"order_quote\":\"White 100 percent cotton bath towel\",\"reason\":\"The order and locked terms specify 100 percent cotton towels with no polyester substitutions. The delivery explicitly states polyester towels were received and that cotton towels were not delivered, a direct material substitution contradicting both the ordered specification and the invoice's cotton claim.\"}]},\"status\":\"OK\"}"
+                  }
+                }
+              },
+              "validator_address": "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": {
+                "raw": "AAA=",
+                "status": "return",
+                "payload": {
+                  "raw": [
+                    0
+                  ],
+                  "readable": "null"
+                }
+              },
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "fb36d74511d505963315bcdccbfb5887932c8b4e7d838a2160160d6529296862",
+              "validator_address": "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB"
+            }
+          ],
+          "validators": [
+            {
+              "mode": "validator",
+              "vote": "idle",
+              "execution_result": "ERROR",
+              "result": "AmlkbGU=",
+              "genvm_result": {
+                "stderr": "Validator execution cancelled after quorum",
+                "stdout": "",
+                "raw_error": {
+                  "fatal": false,
+                  "causes": [
+                    "VALIDATOR_QUORUM_REACHED"
+                  ]
+                },
+                "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": null,
+              "validator_address": "0x007d6451555Df7765c707284F844137927aE4e5E"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": "AAA=",
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "fb36d74511d505963315bcdccbfb5887932c8b4e7d838a2160160d6529296862",
+              "validator_address": "0x045291B293B9D68969c18B6637A8258038cf787A"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": "AAA=",
+              "genvm_result": {
+                "stderr": "",
+                "stdout": "",
+                "raw_error": null,
+                "error_code": null,
+                "error_description": null
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": "fb36d74511d505963315bcdccbfb5887932c8b4e7d838a2160160d6529296862",
+              "validator_address": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a"
+            },
+            {
+              "mode": "validator",
+              "vote": "idle",
+              "execution_result": "ERROR",
+              "result": "AmlkbGU=",
+              "genvm_result": {
+                "stderr": "Validator execution cancelled after quorum",
+                "stdout": "",
+                "raw_error": {
+                  "fatal": false,
+                  "causes": [
+                    "VALIDATOR_QUORUM_REACHED"
+                  ]
+                },
+                "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+              },
+              "nondet_disagree": null,
+              "contract_state_hash": null,
+              "validator_address": "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "status": "FINALIZED_LIFECYCLE_VERIFIED",
+  "contract_address": "0xed891334A5066375Aa2d3ee3bBA9D5F98F8F9D40",
+  "receipt": {
+    "arithmetic": {
+      "expected_total_minor": 20400,
+      "findings": [],
+      "partial": false
+    },
+    "attempt": 1,
+    "decision_hash": "1229d275f4f068f829adeff1b63f796602e9f8895468f304c9765936b8b11cec",
+    "delivery_sha256": "b3c83767000a04df4ea08293fb36ff3d8edc41d337943f25d8bfaa1358bfdf8f",
+    "domain": {
+      "buyer": "0x393019A578d0855cEFe1335dFA4b17452785e0CD",
+      "chain_id": 61999,
+      "contract": "0xed891334A5066375Aa2d3ee3bBA9D5F98F8F9D40",
+      "policy": "invoicematchseal/1.0",
+      "supplier": "0x2C774f1367684eF508E53247470b6D730dF44cab"
+    },
+    "invoice_sha256": "9efc6114e11a8b87f8ebf8e89ded6cbef49a43a213ce96e912ab6984e7ef8fd7",
+    "order_sha256": "ad6d4e9e487d3755e38cb6cfceb02be67b71e837964ac79498fc8a8fed79b9ee",
+    "outcome": "DISCREPANCY",
+    "payment_authorized": false,
+    "policy": "invoicematchseal/1.0",
+    "previous_event_hash": "ab5b1438527623511502220ee16cc765c562e704cc8228c9a504fdaa7e7a72d5",
+    "reason": "INDEPENDENT_SEMANTIC_CONSENSUS",
+    "sealed": true,
+    "semantic": {
+      "checks": [
+        {
+          "delivery_quote": "100 percent polyester bath towels",
+          "finding": "DIFFERENT",
+          "id": "TOWEL",
+          "invoice_quote": "White bath towels, 100 percent cotton",
+          "order_quote": "White 100 percent cotton bath towel",
+          "reason": "The order and locked terms specify 100 percent cotton towels with no polyester substitutions. The delivery explicitly states polyester towels were received and that cotton towels were not delivered, a direct material substitution contradicting both the ordered specification and the invoice's cotton claim."
+        }
+      ]
+    }
+  },
+  "contract_status": {
+    "accepted": true,
+    "attempts": 1,
+    "delivery_locked": true,
+    "domain": {
+      "buyer": "0x393019A578d0855cEFe1335dFA4b17452785e0CD",
+      "chain_id": 61999,
+      "contract": "0xed891334A5066375Aa2d3ee3bBA9D5F98F8F9D40",
+      "policy": "invoicematchseal/1.0",
+      "supplier": "0x2C774f1367684eF508E53247470b6D730dF44cab"
+    },
+    "event_count": 5,
+    "event_head": "ca63bdfa8c813a1b0f4fb4653469b7a01575f8c27b8886d20b6d45775d8f6177",
+    "invoice_locked": true,
+    "order_locked": true,
+    "policy": "invoicematchseal/1.0",
+    "sealed": true
+  },
+  "events": [
+    {
+      "actor": "0x393019A578d0855cEFe1335dFA4b17452785e0CD",
+      "domain": {
+        "buyer": "0x393019A578d0855cEFe1335dFA4b17452785e0CD",
+        "chain_id": 61999,
+        "contract": "0xed891334A5066375Aa2d3ee3bBA9D5F98F8F9D40",
+        "policy": "invoicematchseal/1.0",
+        "supplier": "0x2C774f1367684eF508E53247470b6D730dF44cab"
+      },
+      "event_hash": "ea624210b8b319e88c7294a8191762cb67d3918af106222c3ed56086a1f0bdec",
+      "kind": "ORDER_LOCKED",
+      "payload": {
+        "canonical_sha256": "ad6d4e9e487d3755e38cb6cfceb02be67b71e837964ac79498fc8a8fed79b9ee",
+        "data": {
+          "currency": "EUR",
+          "lines": [
+            {
+              "description": "White 100 percent cotton bath towel, 500 gsm, 70 x 140 cm.",
+              "id": "TOWEL",
+              "quantity": 20,
+              "tax_bps": 2000,
+              "unit": "piece",
+              "unit_price_minor": 850
+            }
+          ],
+          "minor_exponent": 2,
+          "order_id": "PO-HOTEL-001",
+          "price_tolerance_minor": 0,
+          "terms": "Supply the specified cotton towels. No polyester substitutions. Delivery must identify grade and size. Prices exclude VAT; tax is rounded half-up per line.",
+          "total_tolerance_minor": 0
+        },
+        "raw_bytes": 472,
+        "raw_sha256": "5deeb79947910eef3230edb0c4cdb38afd8043ed9b1c179304c12d3998a5f9ce"
+      },
+      "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sequence": 1
+    },
+    {
+      "actor": "0x2C774f1367684eF508E53247470b6D730dF44cab",
+      "domain": {
+        "buyer": "0x393019A578d0855cEFe1335dFA4b17452785e0CD",
+        "chain_id": 61999,
+        "contract": "0xed891334A5066375Aa2d3ee3bBA9D5F98F8F9D40",
+        "policy": "invoicematchseal/1.0",
+        "supplier": "0x2C774f1367684eF508E53247470b6D730dF44cab"
+      },
+      "event_hash": "75eebeb9f999f83fb4ca2ef66ced4233c157a28acd6079bd5ee0b3fe84d37264",
+      "kind": "ORDER_ACCEPTED",
+      "payload": {
+        "canonical_sha256": "ad6d4e9e487d3755e38cb6cfceb02be67b71e837964ac79498fc8a8fed79b9ee"
+      },
+      "previous_hash": "ea624210b8b319e88c7294a8191762cb67d3918af106222c3ed56086a1f0bdec",
+      "sequence": 2
+    },
+    {
+      "actor": "0x393019A578d0855cEFe1335dFA4b17452785e0CD",
+      "domain": {
+        "buyer": "0x393019A578d0855cEFe1335dFA4b17452785e0CD",
+        "chain_id": 61999,
+        "contract": "0xed891334A5066375Aa2d3ee3bBA9D5F98F8F9D40",
+        "policy": "invoicematchseal/1.0",
+        "supplier": "0x2C774f1367684eF508E53247470b6D730dF44cab"
+      },
+      "event_hash": "50cb09110fe38a106eee527f4c25d6f95034d6870609e37a5f0f6fa087a9f0cb",
+      "kind": "DELIVERY_LOCKED",
+      "payload": {
+        "canonical_sha256": "b3c83767000a04df4ea08293fb36ff3d8edc41d337943f25d8bfaa1358bfdf8f",
+        "data": {
+          "lines": [
+            {
+              "description": "Received white 100 percent polyester bath towels, 500 gsm, size 70 x 140 cm. Cotton towels were not delivered.",
+              "id": "TOWEL",
+              "quantity": 20,
+              "unit": "piece"
+            }
+          ],
+          "order_id": "PO-HOTEL-001",
+          "receipt_id": "GRN-001"
+        },
+        "raw_bytes": 243,
+        "raw_sha256": "c035f13e01cd81aa6f62133e8e6c7fa91cee31613b1a4f956eb4f7992cba9671"
+      },
+      "previous_hash": "75eebeb9f999f83fb4ca2ef66ced4233c157a28acd6079bd5ee0b3fe84d37264",
+      "sequence": 3
+    },
+    {
+      "actor": "0x2C774f1367684eF508E53247470b6D730dF44cab",
+      "domain": {
+        "buyer": "0x393019A578d0855cEFe1335dFA4b17452785e0CD",
+        "chain_id": 61999,
+        "contract": "0xed891334A5066375Aa2d3ee3bBA9D5F98F8F9D40",
+        "policy": "invoicematchseal/1.0",
+        "supplier": "0x2C774f1367684eF508E53247470b6D730dF44cab"
+      },
+      "event_hash": "ab5b1438527623511502220ee16cc765c562e704cc8228c9a504fdaa7e7a72d5",
+      "kind": "INVOICE_LOCKED",
+      "payload": {
+        "canonical_sha256": "9efc6114e11a8b87f8ebf8e89ded6cbef49a43a213ce96e912ab6984e7ef8fd7",
+        "data": {
+          "currency": "EUR",
+          "invoice_id": "INV-001",
+          "lines": [
+            {
+              "description": "White bath towels, 100 percent cotton, 500 gsm, 70 x 140 cm.",
+              "id": "TOWEL",
+              "net_minor": 17000,
+              "quantity": 20,
+              "tax_minor": 3400,
+              "unit": "piece",
+              "unit_price_minor": 850
+            }
+          ],
+          "order_id": "PO-HOTEL-001",
+          "total_minor": 20400
+        },
+        "raw_bytes": 298,
+        "raw_sha256": "dacac87f96d064c069f41027ab6b3b43d8fa79e7903a6f5bb95ae3d2c9cb06e7"
+      },
+      "previous_hash": "50cb09110fe38a106eee527f4c25d6f95034d6870609e37a5f0f6fa087a9f0cb",
+      "sequence": 4
+    },
+    {
+      "actor": "0x393019A578d0855cEFe1335dFA4b17452785e0CD",
+      "domain": {
+        "buyer": "0x393019A578d0855cEFe1335dFA4b17452785e0CD",
+        "chain_id": 61999,
+        "contract": "0xed891334A5066375Aa2d3ee3bBA9D5F98F8F9D40",
+        "policy": "invoicematchseal/1.0",
+        "supplier": "0x2C774f1367684eF508E53247470b6D730dF44cab"
+      },
+      "event_hash": "ca63bdfa8c813a1b0f4fb4653469b7a01575f8c27b8886d20b6d45775d8f6177",
+      "kind": "RECONCILED",
+      "payload": {
+        "arithmetic": {
+          "expected_total_minor": 20400,
+          "findings": [],
+          "partial": false
+        },
+        "attempt": 1,
+        "decision_hash": "1229d275f4f068f829adeff1b63f796602e9f8895468f304c9765936b8b11cec",
+        "delivery_sha256": "b3c83767000a04df4ea08293fb36ff3d8edc41d337943f25d8bfaa1358bfdf8f",
+        "domain": {
+          "buyer": "0x393019A578d0855cEFe1335dFA4b17452785e0CD",
+          "chain_id": 61999,
+          "contract": "0xed891334A5066375Aa2d3ee3bBA9D5F98F8F9D40",
+          "policy": "invoicematchseal/1.0",
+          "supplier": "0x2C774f1367684eF508E53247470b6D730dF44cab"
+        },
+        "invoice_sha256": "9efc6114e11a8b87f8ebf8e89ded6cbef49a43a213ce96e912ab6984e7ef8fd7",
+        "order_sha256": "ad6d4e9e487d3755e38cb6cfceb02be67b71e837964ac79498fc8a8fed79b9ee",
+        "outcome": "DISCREPANCY",
+        "payment_authorized": false,
+        "policy": "invoicematchseal/1.0",
+        "previous_event_hash": "ab5b1438527623511502220ee16cc765c562e704cc8228c9a504fdaa7e7a72d5",
+        "reason": "INDEPENDENT_SEMANTIC_CONSENSUS",
+        "sealed": true,
+        "semantic": {
+          "checks": [
+            {
+              "delivery_quote": "100 percent polyester bath towels",
+              "finding": "DIFFERENT",
+              "id": "TOWEL",
+              "invoice_quote": "White bath towels, 100 percent cotton",
+              "order_quote": "White 100 percent cotton bath towel",
+              "reason": "The order and locked terms specify 100 percent cotton towels with no polyester substitutions. The delivery explicitly states polyester towels were received and that cotton towels were not delivered, a direct material substitution contradicting both the ordered specification and the invoice's cotton claim."
+            }
+          ]
+        }
+      },
+      "previous_hash": "ab5b1438527623511502220ee16cc765c562e704cc8228c9a504fdaa7e7a72d5",
+      "sequence": 5
+    }
+  ],
+  "verification": {
+    "deployed_source_matches": true,
+    "all_transactions_finalized": true,
+    "all_vm_executions_successful": true,
+    "agreeing_validators_observed": true,
+    "finalized_state_read": true,
+    "event_chain_verified": true,
+    "trusted_head": "ca63bdfa8c813a1b0f4fb4653469b7a01575f8c27b8886d20b6d45775d8f6177"
+  }
+}

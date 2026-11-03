@@ -30,7 +30,7 @@ The AI classification is only one input. The final outcome, seal state, evidence
 
 ## Live verification
 
-Deployed and verified on hosted GenLayer Studio: [`0xB6f407d63B9730e45FED492E4c1acd17F0EC814D`](https://explorer-studio.genlayer.com/contracts/0xB6f407d63B9730e45FED492E4c1acd17F0EC814D). The full six-transaction lifecycle is finalized with a real-AI `MATCHED` result and agreeing validators. [Proof and reproduction](docs/LIVE.md).
+Deployed and verified on hosted GenLayer Studio: [`0xB6f407d63B9730e45FED492E4c1acd17F0EC814D`](https://explorer-studio.genlayer.com/contracts/0xB6f407d63B9730e45FED492E4c1acd17F0EC814D). Two live instances demonstrate `MATCHED` for correct delivery and `DISCREPANCY` for an unauthorized material substitution. All 12 transactions are finalized with real AI and agreeing validators. [Proof and reproduction](docs/LIVE.md).
 
 ## Run and verify
 

@@ -4,7 +4,7 @@
 
 The buyer is the deployer. A distinct, nonzero supplier is fixed at construction. Buyer alone locks order/delivery; supplier alone accepts order/submits invoice; only these parties evaluate. All records are immutable. No admin, upgrade, deletion, arbitrary write, payment, token approval, cross-contract call, URL request, secret or external signing key exists in the contract.
 
-Supplier acceptance is a wallet transaction over the canonical order commitment. Delivery is buyer-attested and invoice supplier-attested. These roles can be mistaken, compromised or dishonest. Parties can collude. The contract authenticates submission provenance and consistency, not physical goods or document authenticity. It performs no signature forensics, issuer lookup, OCR or external identity verification.
+Supplier acceptance is a wallet transaction over the canonical order commitment. Delivery is buyer-attested and invoice supplier-attested. These roles can be mistaken, compromised or dishonest. Either party can withhold a required record and prevent evaluation; there is no forced-completion mechanism. Parties can collude. The contract authenticates submission provenance and consistency, not physical goods or document authenticity. It performs no signature forensics, issuer lookup, OCR or external identity verification.
 
 ## Resource bounds
 

@@ -28,3 +28,23 @@ python scripts/verify_receipt.py docs/live-demo.json --expected-head ee9724750fb
 The verifier separately fetches deployment input bytes, transaction finality and successful executions, agreeing validator votes, finalized getter state and the event chain. The proof snapshots are compact extracts; transaction hashes let reviewers retrieve current network data themselves. Agreement means the network accepted the outcome; votes need not be unanimous. The raw vote map preserves disagreements.
 
 Studio is a hosted sandbox, not Bradbury or production. It may reset. This public synthetic test demonstrates execution and independent semantic consensus; it does not prove accuracy for arbitrary commercial documents or immunity to adversarial prompts. No actual payment was authorized or transferred.
+
+
+## Same amounts, wrong material
+
+A second instance kept all quantities, prices, taxes and invoice totals identical, but delivery explicitly reported polyester instead of the ordered cotton. Real semantic consensus returned **DISCREPANCY**, with a grounded `DIFFERENT` finding; arithmetic had no discrepancies. All six transactions are finalized, all returned VM executions succeeded, and deployed source bytes match the same contract.
+
+- Contract: [`0xed891334A5066375Aa2d3ee3bBA9D5F98F8F9D40`](https://explorer-studio.genlayer.com/contracts/0xed891334A5066375Aa2d3ee3bBA9D5F98F8F9D40).
+- Full compact proof: [live-substitution.json](live-substitution.json).
+- Finalized head: `ca63bdfa8c813a1b0f4fb4653469b7a01575f8c27b8886d20b6d45775d8f6177`.
+
+| Method | Transaction | Status |
+|---|---|---|
+| deploy | [0x23b10c6d00…](https://explorer-studio.genlayer.com/tx/0x23b10c6d006aa26db3a76cd9470a1aa595cf3d0ad6620b931ba93947e1c84178) | FINALIZED / VM SUCCESS |
+| lock_order | [0xd06e6a0810…](https://explorer-studio.genlayer.com/tx/0xd06e6a0810aaa38b2fab5fec55c106e8342f885d0e304d8e7b98eea49626f3bf) | FINALIZED / VM SUCCESS |
+| accept_order | [0xccc84c5bab…](https://explorer-studio.genlayer.com/tx/0xccc84c5bab5c76c44674185e655022f5325ef293a7f2425d24a38d45b96cf2e6) | FINALIZED / VM SUCCESS |
+| lock_delivery | [0xf88e211838…](https://explorer-studio.genlayer.com/tx/0xf88e211838a83552e6a38027887c81218effc18f5bbd1048c8d24737ff73550c) | FINALIZED / VM SUCCESS |
+| submit_invoice | [0x4ed3f9805a…](https://explorer-studio.genlayer.com/tx/0x4ed3f9805a1bf36dcde0d65c6c3d7d7fbe3db501e2dea13d4faeb58f0c9f86df) | FINALIZED / VM SUCCESS |
+| evaluate | [0x01d48b5a97…](https://explorer-studio.genlayer.com/tx/0x01d48b5a9765310c2eda2d5ec00b610f755262a3f91efa6e3d73ab251fcb8810) | FINALIZED / VM SUCCESS |
+
+Reproduce this scenario with `python scripts/live_demo.py --case substitution`. Independently recheck using `python scripts/verify_live.py docs/live-substitution.json`. The same two demo wallets participated; the contract instance and evidence history are separate.

@@ -112,7 +112,6 @@ try:
         if balance == 0:
             client.fund_account(account.address, 10**20)
     data = transact('deploy', deploy=True)
-    print('Deploy receipt keys:', list(data), flush=True)
     address = data.get('data', {}).get('contract_address') or data.get('contract_address') or data.get('to_address')
     if not address:
         raise RuntimeError('Missing deployed contract address in receipt')
@@ -132,7 +131,8 @@ try:
         raise RuntimeError('Unexpected outcome: ' + record['receipt']['outcome'])
     record.pop('error', None)
     record['case'] = case
-    record['status'] = 'ACCEPTED_LIFECYCLE_VERIFIED'
+    record['status'] = ('FINALIZED_LIFECYCLE_VERIFIED' if record.get('verification', {}).get('all_transactions_finalized')
+                        else 'ACCEPTED_LIFECYCLE_VERIFIED')
     save()
     print('Live contract:', address, flush=True)
 except Exception as exc:

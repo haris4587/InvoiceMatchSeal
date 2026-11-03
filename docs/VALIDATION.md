@@ -16,7 +16,7 @@ Direct mode uses mocked AI. Tests explicitly execute the captured validator with
 
 ## Live verification
 
-Hosted Studio uses real model calls and normal validator consensus. Exact source hash, deployment and transaction evidence are in `live-demo.json`, summarized in `LIVE.md`. A sealed reconciliation receipt and an accepted transaction must not be confused with verified blockchain finality.
+Hosted Studio uses real model calls and normal validator consensus. Both matching and semantic-substitution scenarios passed: `MATCHED` and `DISCREPANCY`, respectively. All 12 transactions are finalized with successful VM executions, agreeing validators, deployed-source equality and verified event chains. Exact evidence is in `live-demo.json` and `live-substitution.json`, summarized in `LIVE.md`. A sealed reconciliation receipt and an accepted transaction must not be confused with verified blockchain finality.
 
 ## Reproduce
 
@@ -29,4 +29,4 @@ python scripts/offline_demo.py
 python scripts/verify_receipt.py examples/offline-receipt.json
 ```
 
-GitHub Actions repeats the checks and verifies the generated ABI matches source. Machine-readable lint and test logs are committed alongside this report.
+GitHub Actions repeats the checks and verifies the generated ABI matches source. [The source-build run passed](https://github.com/haris4587/InvoiceMatchSeal/actions/runs/41598207764). Machine-readable lint and test logs are committed alongside this report.
