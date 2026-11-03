@@ -1,0 +1,12 @@
+{
+  "order_id": "PO-HOTEL-001",
+  "receipt_id": "GRN-001",
+  "lines": [
+    {
+      "id": "TOWEL",
+      "description": "Received white pure cotton bath towels, 500 gsm, size 70 x 140 cm.",
+      "unit": "piece",
+      "quantity": 20
+    }
+  ]
+}

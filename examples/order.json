@@ -1,0 +1,18 @@
+{
+  "order_id": "PO-HOTEL-001",
+  "currency": "EUR",
+  "minor_exponent": 2,
+  "price_tolerance_minor": 0,
+  "total_tolerance_minor": 0,
+  "terms": "Supply the specified cotton towels. No polyester substitutions. Delivery must identify grade and size. Prices exclude VAT; tax is rounded half-up per line.",
+  "lines": [
+    {
+      "id": "TOWEL",
+      "description": "White 100 percent cotton bath towel, 500 gsm, 70 x 140 cm.",
+      "unit": "piece",
+      "quantity": 20,
+      "unit_price_minor": 850,
+      "tax_bps": 2000
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "order_id": "PO-HOTEL-001",
+  "invoice_id": "INV-001",
+  "currency": "EUR",
+  "total_minor": 20400,
+  "lines": [
+    {
+      "id": "TOWEL",
+      "description": "White bath towels, 100 percent cotton, 500 gsm, 70 x 140 cm.",
+      "unit": "piece",
+      "quantity": 20,
+      "unit_price_minor": 850,
+      "net_minor": 17000,
+      "tax_minor": 3400
+    }
+  ]
+}

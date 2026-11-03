@@ -1,0 +1,97 @@
+{
+  "ctor": {
+    "params": [
+      [
+        "supplier",
+        "address"
+      ]
+    ],
+    "kwparams": {}
+  },
+  "methods": {
+    "accept_order": {
+      "params": [
+        [
+          "canonical_sha256",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "evaluate": {
+      "params": [],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "get_documents": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_event": {
+      "params": [
+        [
+          "sequence",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_receipt": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_status": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "lock_delivery": {
+      "params": [
+        [
+          "delivery_json",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "lock_order": {
+      "params": [
+        [
+          "order_json",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "submit_invoice": {
+      "params": [
+        [
+          "invoice_json",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    }
+  }
+}

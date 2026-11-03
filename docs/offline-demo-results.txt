@@ -1,0 +1,2 @@
+MOCKED demo outcome: MATCHED
+Receipt verified: /workspace/scratch/7b4f56c9756e/InvoiceMatchSeal/examples/offline-receipt.json

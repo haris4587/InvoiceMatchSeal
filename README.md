@@ -28,6 +28,10 @@ The AI classification is only one input. The final outcome, seal state, evidence
 
 `sealed` is application state; it does **not** mean the GenLayer transaction has reached network finality. Check the network transaction separately.
 
+## Live verification
+
+Deployed and verified on hosted GenLayer Studio: [`0xB6f407d63B9730e45FED492E4c1acd17F0EC814D`](https://explorer-studio.genlayer.com/contracts/0xB6f407d63B9730e45FED492E4c1acd17F0EC814D). The full six-transaction lifecycle is finalized with a real-AI `MATCHED` result and agreeing validators. [Proof and reproduction](docs/LIVE.md).
+
 ## Run and verify
 
 Python 3.12+ is required. The first SDK download can take a few minutes.

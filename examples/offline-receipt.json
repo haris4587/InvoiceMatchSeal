@@ -1,0 +1,232 @@
+{
+  "mode": "DIRECT_MODE_MOCKED_AI",
+  "receipt": {
+    "arithmetic": {
+      "expected_total_minor": 20400,
+      "findings": [],
+      "partial": false
+    },
+    "attempt": 1,
+    "decision_hash": "1f8d1326e4f6655e16375ebc4443bc80fe79c47cbce6304ba0d23b7897954134",
+    "delivery_sha256": "dffe89ef4d8166102f7578433693d97eee975635819a13d10261c75829ddea84",
+    "domain": {
+      "buyer": "0xa67199ce63C2378ac25ddAaa1dC034AC9aD10F43",
+      "chain_id": 1,
+      "contract": "0xC0Db09b0DB35496cD31Ac8dDb1C82db36746f88D",
+      "policy": "invoicematchseal/1.0",
+      "supplier": "0xfFd4De00DD1f189Ae8A3811716cA369067B134da"
+    },
+    "invoice_sha256": "9efc6114e11a8b87f8ebf8e89ded6cbef49a43a213ce96e912ab6984e7ef8fd7",
+    "order_sha256": "ad6d4e9e487d3755e38cb6cfceb02be67b71e837964ac79498fc8a8fed79b9ee",
+    "outcome": "MATCHED",
+    "payment_authorized": false,
+    "policy": "invoicematchseal/1.0",
+    "previous_event_hash": "d23858d25d9377857bcfa55842ee5499296ad581a1e523338248b8bcc2b8acc7",
+    "reason": "INDEPENDENT_SEMANTIC_CONSENSUS",
+    "sealed": true,
+    "semantic": {
+      "checks": [
+        {
+          "delivery_quote": "Received white pure cotton bath towels, 500 gsm, size 70 x 140 cm.",
+          "finding": "SAME",
+          "id": "TOWEL",
+          "invoice_quote": "White bath towels, 100 percent cotton, 500 gsm, 70 x 140 cm.",
+          "order_quote": "White 100 percent cotton bath towel, 500 gsm, 70 x 140 cm.",
+          "reason": "Mocked fixture: all descriptions identify cotton towels of the same grade and size."
+        }
+      ]
+    }
+  },
+  "contract_status": {
+    "accepted": true,
+    "attempts": 1,
+    "delivery_locked": true,
+    "domain": {
+      "buyer": "0xa67199ce63C2378ac25ddAaa1dC034AC9aD10F43",
+      "chain_id": 1,
+      "contract": "0xC0Db09b0DB35496cD31Ac8dDb1C82db36746f88D",
+      "policy": "invoicematchseal/1.0",
+      "supplier": "0xfFd4De00DD1f189Ae8A3811716cA369067B134da"
+    },
+    "event_count": 5,
+    "event_head": "ff80bdd574c16f605d571b5576bcf005d276afdc398aed796c33ef76ed4b3219",
+    "invoice_locked": true,
+    "order_locked": true,
+    "policy": "invoicematchseal/1.0",
+    "sealed": true
+  },
+  "events": [
+    {
+      "actor": "0xa67199ce63C2378ac25ddAaa1dC034AC9aD10F43",
+      "domain": {
+        "buyer": "0xa67199ce63C2378ac25ddAaa1dC034AC9aD10F43",
+        "chain_id": 1,
+        "contract": "0xC0Db09b0DB35496cD31Ac8dDb1C82db36746f88D",
+        "policy": "invoicematchseal/1.0",
+        "supplier": "0xfFd4De00DD1f189Ae8A3811716cA369067B134da"
+      },
+      "event_hash": "24edfe4304ce14c94dee4e5d7e91c991106297ad94eeb0a7868df6920baa87b6",
+      "kind": "ORDER_LOCKED",
+      "payload": {
+        "canonical_sha256": "ad6d4e9e487d3755e38cb6cfceb02be67b71e837964ac79498fc8a8fed79b9ee",
+        "data": {
+          "currency": "EUR",
+          "lines": [
+            {
+              "description": "White 100 percent cotton bath towel, 500 gsm, 70 x 140 cm.",
+              "id": "TOWEL",
+              "quantity": 20,
+              "tax_bps": 2000,
+              "unit": "piece",
+              "unit_price_minor": 850
+            }
+          ],
+          "minor_exponent": 2,
+          "order_id": "PO-HOTEL-001",
+          "price_tolerance_minor": 0,
+          "terms": "Supply the specified cotton towels. No polyester substitutions. Delivery must identify grade and size. Prices exclude VAT; tax is rounded half-up per line.",
+          "total_tolerance_minor": 0
+        },
+        "raw_bytes": 472,
+        "raw_sha256": "5deeb79947910eef3230edb0c4cdb38afd8043ed9b1c179304c12d3998a5f9ce"
+      },
+      "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sequence": 1
+    },
+    {
+      "actor": "0xfFd4De00DD1f189Ae8A3811716cA369067B134da",
+      "domain": {
+        "buyer": "0xa67199ce63C2378ac25ddAaa1dC034AC9aD10F43",
+        "chain_id": 1,
+        "contract": "0xC0Db09b0DB35496cD31Ac8dDb1C82db36746f88D",
+        "policy": "invoicematchseal/1.0",
+        "supplier": "0xfFd4De00DD1f189Ae8A3811716cA369067B134da"
+      },
+      "event_hash": "cdaef23b35f3bcf625879e380e6484cbaf67a06542189af4431958330cb66d76",
+      "kind": "ORDER_ACCEPTED",
+      "payload": {
+        "canonical_sha256": "ad6d4e9e487d3755e38cb6cfceb02be67b71e837964ac79498fc8a8fed79b9ee"
+      },
+      "previous_hash": "24edfe4304ce14c94dee4e5d7e91c991106297ad94eeb0a7868df6920baa87b6",
+      "sequence": 2
+    },
+    {
+      "actor": "0xfFd4De00DD1f189Ae8A3811716cA369067B134da",
+      "domain": {
+        "buyer": "0xa67199ce63C2378ac25ddAaa1dC034AC9aD10F43",
+        "chain_id": 1,
+        "contract": "0xC0Db09b0DB35496cD31Ac8dDb1C82db36746f88D",
+        "policy": "invoicematchseal/1.0",
+        "supplier": "0xfFd4De00DD1f189Ae8A3811716cA369067B134da"
+      },
+      "event_hash": "656c61e8f68d46328a12f5375cf00b82526bef9201c7a147e9f96cfa3f98aae6",
+      "kind": "INVOICE_LOCKED",
+      "payload": {
+        "canonical_sha256": "9efc6114e11a8b87f8ebf8e89ded6cbef49a43a213ce96e912ab6984e7ef8fd7",
+        "data": {
+          "currency": "EUR",
+          "invoice_id": "INV-001",
+          "lines": [
+            {
+              "description": "White bath towels, 100 percent cotton, 500 gsm, 70 x 140 cm.",
+              "id": "TOWEL",
+              "net_minor": 17000,
+              "quantity": 20,
+              "tax_minor": 3400,
+              "unit": "piece",
+              "unit_price_minor": 850
+            }
+          ],
+          "order_id": "PO-HOTEL-001",
+          "total_minor": 20400
+        },
+        "raw_bytes": 298,
+        "raw_sha256": "dacac87f96d064c069f41027ab6b3b43d8fa79e7903a6f5bb95ae3d2c9cb06e7"
+      },
+      "previous_hash": "cdaef23b35f3bcf625879e380e6484cbaf67a06542189af4431958330cb66d76",
+      "sequence": 3
+    },
+    {
+      "actor": "0xa67199ce63C2378ac25ddAaa1dC034AC9aD10F43",
+      "domain": {
+        "buyer": "0xa67199ce63C2378ac25ddAaa1dC034AC9aD10F43",
+        "chain_id": 1,
+        "contract": "0xC0Db09b0DB35496cD31Ac8dDb1C82db36746f88D",
+        "policy": "invoicematchseal/1.0",
+        "supplier": "0xfFd4De00DD1f189Ae8A3811716cA369067B134da"
+      },
+      "event_hash": "d23858d25d9377857bcfa55842ee5499296ad581a1e523338248b8bcc2b8acc7",
+      "kind": "DELIVERY_LOCKED",
+      "payload": {
+        "canonical_sha256": "dffe89ef4d8166102f7578433693d97eee975635819a13d10261c75829ddea84",
+        "data": {
+          "lines": [
+            {
+              "description": "Received white pure cotton bath towels, 500 gsm, size 70 x 140 cm.",
+              "id": "TOWEL",
+              "quantity": 20,
+              "unit": "piece"
+            }
+          ],
+          "order_id": "PO-HOTEL-001",
+          "receipt_id": "GRN-001"
+        },
+        "raw_bytes": 199,
+        "raw_sha256": "0cb6b807da316a17fe2c1adfdf7974900bb9240ff8155e05d6e68a1327893c3b"
+      },
+      "previous_hash": "656c61e8f68d46328a12f5375cf00b82526bef9201c7a147e9f96cfa3f98aae6",
+      "sequence": 4
+    },
+    {
+      "actor": "0xa67199ce63C2378ac25ddAaa1dC034AC9aD10F43",
+      "domain": {
+        "buyer": "0xa67199ce63C2378ac25ddAaa1dC034AC9aD10F43",
+        "chain_id": 1,
+        "contract": "0xC0Db09b0DB35496cD31Ac8dDb1C82db36746f88D",
+        "policy": "invoicematchseal/1.0",
+        "supplier": "0xfFd4De00DD1f189Ae8A3811716cA369067B134da"
+      },
+      "event_hash": "ff80bdd574c16f605d571b5576bcf005d276afdc398aed796c33ef76ed4b3219",
+      "kind": "RECONCILED",
+      "payload": {
+        "arithmetic": {
+          "expected_total_minor": 20400,
+          "findings": [],
+          "partial": false
+        },
+        "attempt": 1,
+        "decision_hash": "1f8d1326e4f6655e16375ebc4443bc80fe79c47cbce6304ba0d23b7897954134",
+        "delivery_sha256": "dffe89ef4d8166102f7578433693d97eee975635819a13d10261c75829ddea84",
+        "domain": {
+          "buyer": "0xa67199ce63C2378ac25ddAaa1dC034AC9aD10F43",
+          "chain_id": 1,
+          "contract": "0xC0Db09b0DB35496cD31Ac8dDb1C82db36746f88D",
+          "policy": "invoicematchseal/1.0",
+          "supplier": "0xfFd4De00DD1f189Ae8A3811716cA369067B134da"
+        },
+        "invoice_sha256": "9efc6114e11a8b87f8ebf8e89ded6cbef49a43a213ce96e912ab6984e7ef8fd7",
+        "order_sha256": "ad6d4e9e487d3755e38cb6cfceb02be67b71e837964ac79498fc8a8fed79b9ee",
+        "outcome": "MATCHED",
+        "payment_authorized": false,
+        "policy": "invoicematchseal/1.0",
+        "previous_event_hash": "d23858d25d9377857bcfa55842ee5499296ad581a1e523338248b8bcc2b8acc7",
+        "reason": "INDEPENDENT_SEMANTIC_CONSENSUS",
+        "sealed": true,
+        "semantic": {
+          "checks": [
+            {
+              "delivery_quote": "Received white pure cotton bath towels, 500 gsm, size 70 x 140 cm.",
+              "finding": "SAME",
+              "id": "TOWEL",
+              "invoice_quote": "White bath towels, 100 percent cotton, 500 gsm, 70 x 140 cm.",
+              "order_quote": "White 100 percent cotton bath towel, 500 gsm, 70 x 140 cm.",
+              "reason": "Mocked fixture: all descriptions identify cotton towels of the same grade and size."
+            }
+          ]
+        }
+      },
+      "previous_hash": "d23858d25d9377857bcfa55842ee5499296ad581a1e523338248b8bcc2b8acc7",
+      "sequence": 5
+    }
+  ]
+}
